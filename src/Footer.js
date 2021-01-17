@@ -7,6 +7,7 @@ export default function Footer() {
       <a
         href="https://github.com/rannymonita/react-weather-uvindex-app"
         target="_blank"
+        rel="noreferrer"
       >
         Github
       </a>
