@@ -25,11 +25,11 @@ export default function Weather() {
       </form>
       <div className="row">
         <div className="col-md-6">
-          <h1>Lisbon</h1>
-          <p>Sun Jan 17</p>
+          <h3>Lisbon</h3>
+          <p>Sunday Jan 17</p>
           <p>last updated 17:08</p>
-          <h2>18°</h2>
-          <span>C | F</span>
+          <h2>18</h2>
+          <span className="unit">°C | °F</span>
           <p>Clear Sky</p>
         </div>
         <div className="col-md-6">
@@ -39,9 +39,10 @@ export default function Weather() {
       <div className="row">
         <div className="col-md-6">
           <h4>UV Index</h4>
+          <hr />
           <ul className="list-group">
             <li className="list-group-item">
-              Value : <span id="uv-index">2</span>
+              Value : <span id="uv-index">2</span> (low)
             </li>
             <li className="list-group-item">
               Suggestion :{" "}
@@ -64,6 +65,7 @@ export default function Weather() {
         </div>
         <div className="col-md-6">
           <h4>Weather Details</h4>
+          <hr />
           <ul className="list-group">
             <li className="list-group-item">
               Real feel : <span id="real-feel-temp">15</span>&deg;

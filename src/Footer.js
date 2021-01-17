@@ -1,16 +1,28 @@
 import React from "react";
+import "./Footer.css";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer>
-      This project was coded by Ranny Monita and is open-sourced on{" "}
+      Design & coded by{" "}
       <a
         href="https://github.com/rannymonita/react-weather-uvindex-app"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
-        Github
+        Ranny Monita
+      </a>
+      . 2020. <br />
+      Open-sourced on{" "}
+      <a
+        href="https://github.com/rannymonita/react-weather-uvindex-app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
       </a>
     </footer>
   );
-}
+};
+
+export default Footer;
