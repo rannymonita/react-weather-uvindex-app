@@ -6,13 +6,11 @@ import orangeBG from "./asset/orangeBG.jpg";
 export default function App() {
   return (
     <div className="App">
-      <div className="container-fluid">
-        <div styles={{ backgroundImage: `url(${orangeBG})` }}>
-          <h1> Weather App </h1>
-          <Weather />
+      <div className="container">
+        <h1> Weather App </h1>
+        <Weather />
 
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </div>
   );
