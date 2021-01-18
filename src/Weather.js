@@ -7,18 +7,18 @@ export default function Weather() {
     <div className="Weather">
       <form>
         <div className="row">
-          <div className="col-12 col-md-8">
+          <div className="col-12 col-md-9">
             <input
               type="search"
               placeholder="Type a city.."
-              className="form-control"
+              className="form-control form-control-sm"
             />
           </div>
-          <div className="col-6 col-md-4">
+          <div className="col-6 col-md-3">
             <input
               type="submit"
               value="Search"
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-secondary btn-sm"
             />
           </div>
         </div>
