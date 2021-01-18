@@ -26,14 +26,28 @@ export default function Weather() {
       <div className="row">
         <div className="col-md-6">
           <h3>Lisbon</h3>
-          <p>Sunday Jan 17</p>
-          <p>last updated 17:08</p>
-          <h2>18</h2>
-          <span className="unit">°C | °F</span>
+          <span className="date">
+            <p>Sunday Jan 17</p>
+            <p>Last updated 17:08</p>
+          </span>
+          <br />
+          <div className="clearfix">
+            <div className="float-left">
+              <span className="temperature">18</span>
+            </div>
+            <div className="float-left">
+              <span className="unit">°C | °F</span>
+            </div>
+          </div>
           <p>Clear Sky</p>
         </div>
         <div className="col-md-6">
-          <img id="main-icon" alt="weather" src={icon} />
+          <img
+            id="main-icon"
+            alt="weather"
+            src={icon}
+            className="icon-current"
+          />
         </div>
       </div>
       <div className="row">

@@ -22,34 +22,53 @@ body {
 }
 
 .Weather h3 {
-  font-size: 32;
+  font-size: 23px;
   margin: 0 auto;
-  letter-spacing: 1px;
-  padding-top: 30px;
+  letter-spacing: 2px;
+  padding: 30px 0 3px 0;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.Weather h2 {
-  font-size: 80px;
-  margin: 0 auto;
-  letter-spacing: 1px;
-  padding-top: 30px;
-}
-
 .Weather p {
   margin-bottom: 0rem;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .Weather h4 {
-  font-size: 15px;
+  font-size: 14px;
   margin: 0 auto;
   letter-spacing: 1px;
   font-weight: bold;
   padding-top: 10px;
+}
+
+.Weather .temperature {
+  font-size: 74px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.Weather .date {
+  margin-bottom: 0rem;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.Weather .unit {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+  position: relative;
+  top: 12px;
+}
+
+.Weather .icon-current {
 }
 
 .Weather hr {
@@ -65,7 +84,8 @@ body {
   border: 0px;
   padding: 3px;
   background: transparent;
-  font-size: 14px;
+  font-size: 11px;
+  line-height: 28px;
 }
 
 .Weather a {
