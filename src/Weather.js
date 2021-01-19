@@ -11,6 +11,7 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
+      iconId: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       temperature: response.data.main.temp,
       icon: response.data.weather[0].icon,
@@ -34,7 +35,6 @@ export default function Weather(props) {
 
   function handleCityChange(event) {
     setCity(event.target.value);
-    
   }
 
   if (weatherData.ready) {
