@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import logo from "./asset/03d.svg";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherCurrent(props) {
