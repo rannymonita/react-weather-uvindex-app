@@ -1,0 +1,22 @@
+.Weather .forecast .col {
+  padding: 21px;
+}
+
+.Weather .forecast .icon {
+  width: 40px;
+  height: 47px;
+}
+
+.Weather .forecast .list-group-item {
+  line-height: 18px;
+  margin: 0 auto;
+}
+
+.Weather .forecast .max-temp {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.Weather .forecast .min-temp {
+  letter-spacing: 2px;
+}

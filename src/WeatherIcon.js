@@ -20,11 +20,5 @@ export default function WeatherIcon(props) {
     "50d": "/asset/50d.svg",
     "50n": "/asset/50n.svg",
   };
-  return (
-    <img
-      className="icon-current"
-      src={codeMapping[props.code]}
-      alt={props.alt}
-    />
-  );
+  return <img src={codeMapping[props.code]} alt={props.alt} />;
 }

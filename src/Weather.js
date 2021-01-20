@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherCurrent from "./WeatherCurrent";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -18,6 +19,8 @@ export default function Weather(props) {
       humid: response.data.main.humidity,
       wind: response.data.wind.speed,
       realFeel: response.data.main.feels_like,
+      latitude: response.data.coord.lat,
+      longitude: response.data.coord.lon,
     });
   }
 
@@ -61,6 +64,10 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherCurrent data={weatherData} />
+        <WeatherForecast
+          lat={weatherData.latitude}
+          lon={weatherData.longitude}
+        />
       </div>
     );
   } else {
