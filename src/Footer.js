@@ -12,7 +12,7 @@ const Footer = () => {
       >
         Ranny Monita
       </a>
-      . 2020. <br />
+       <br />
       Open-sourced on{" "}
       <a
         href="https://github.com/rannymonita/react-weather-uvindex-app"
