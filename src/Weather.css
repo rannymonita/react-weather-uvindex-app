@@ -22,7 +22,7 @@ body {
 
 .Weather .row {
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 0 37px 0;
 }
 
 .Weather h3 {
@@ -43,7 +43,10 @@ body {
 }
 
 .Weather .icon-current {
-  width: 70%;
+  width: 100%;
+  position: relative;
+  top: 24px;
+  padding: 15px 45px;
 }
 
 .Weather h4 {
