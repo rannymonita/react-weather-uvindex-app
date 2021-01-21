@@ -31,7 +31,25 @@ export default function WeatherCurrent(props) {
         </div>
       </div>
       <div className="row">
-        <UvIndex data={props.data} />
+        <div className="col-md-12">
+          <h4>UV Index Today</h4>
+          <hr />
+
+          <UvIndex data={props.data} />
+          <ul className="list-group uvFooter">
+            <li className="list-group-item">
+              For more info about Sun Safety,{" "}
+              <a
+                href="https://www.epa.gov/sunsafety/action-steps-sun-safety"
+                target="_blank"
+                rel="noreferrer"
+              >
+                click here
+              </a>
+              .
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

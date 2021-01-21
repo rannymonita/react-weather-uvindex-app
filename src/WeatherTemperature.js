@@ -24,9 +24,9 @@ export default function WeatherTemperature(props) {
           </div>
           <div className="float-left">
             <span className="unit">
-              <span className="active">°C</span> |{" "}
+              °C |{" "}
               <a href="/" onClick={showFahrenheit}>
-                °F
+                <span className="deactive">°F</span>
               </a>
             </span>
           </div>
@@ -46,14 +46,14 @@ export default function WeatherTemperature(props) {
           <div className="float-left">
             <span className="unit">
               <a href="/" onClick={showCelsius}>
-                °C
+                <span className="deactive">°C</span>
               </a>{" "}
-              | <span className="active">°F</span>
+              | °F
             </span>
           </div>
         </div>
         <div className="realFeel">
-          <span>Real feel {Math.round(((props.realFeel)* 9 / 5 )+ 32)}°</span>
+          <span>Real feel {Math.round((props.realFeel * 9) / 5 + 32)}°</span>
         </div>
       </div>
     );

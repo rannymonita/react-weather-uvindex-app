@@ -22,7 +22,7 @@ body {
 
 .Weather .row {
   margin: 0 auto;
-  padding: 10px 0 37px 0;
+  padding: 10px 0 25px 0;
 }
 
 .Weather h3 {
@@ -88,12 +88,13 @@ body {
   top: 12px;
 }
 
-.Weather .active {
-  font-weight: 700;
+.Weather .deactive {
+  font-weight: 100;
 }
 
 .Weather .unit a {
   text-decoration: none;
+  font-weight: 700;
 }
 
 .Weather hr {
@@ -103,6 +104,10 @@ body {
 
 .Weather ul {
   padding-bottom: 10px;
+}
+
+.Weather .uvFooter {
+  margin-top: -10px;
 }
 
 .Weather .list-group-item {
@@ -115,5 +120,5 @@ body {
 
 .Weather a {
   color: rgb(0, 0, 0);
-  text-decoration: underline;
+  font-weight: 700;
 }
