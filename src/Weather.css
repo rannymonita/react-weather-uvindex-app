@@ -88,13 +88,13 @@ body {
   top: 12px;
 }
 
-.Weather .deactive {
-  font-weight: 100;
+.Weather .unit .active {
+  font-weight: 700;
 }
 
 .Weather .unit a {
   text-decoration: none;
-  font-weight: 700;
+  color: rgb(0, 0, 0);
 }
 
 .Weather hr {
@@ -118,7 +118,7 @@ body {
   line-height: 28px;
 }
 
-.Weather a {
+.Weather .list-group-item a {
   color: rgb(0, 0, 0);
   font-weight: 700;
 }
