@@ -15,7 +15,11 @@ export default function WeatherCurrent(props) {
           </span>
           <br />
 
-          <WeatherTemperature celsius={props.data.temperature} />
+          <WeatherTemperature
+            celsius={props.data.temperature}
+            unit={props.unit}
+            setUnit={props.setUnit}
+          />
 
           <p>{props.data.description}</p>
         </div>

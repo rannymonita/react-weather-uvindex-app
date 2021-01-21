@@ -9,20 +9,39 @@ export default function ForecastPreview(props) {
     return `${day}`;
   }
 
-  return (
-    <div className="col">
-      <ul className="list-group daily">
-        <li className="list-group-item day">{day()}</li>
-        <li className="list-group-item icon">
-          <WeatherIcon code={props.data.weather[0].icon} />
-        </li>
-        <li className="list-group-item max-temp">
-          {Math.round(props.data.temp.max)}°
-        </li>
-        <li className="list-group-item min-temp">
-          {Math.round(props.data.temp.min)}°
-        </li>
-      </ul>
-    </div>
-  );
+  if (props.unit === "celsius") {
+    return (
+      <div className="col">
+        <ul className="list-group daily">
+          <li className="list-group-item day">{day()}</li>
+          <li className="list-group-item icon">
+            <WeatherIcon code={props.data.weather[0].icon} />
+          </li>
+          <li className="list-group-item max-temp">
+            {Math.round(props.data.temp.max)}°
+          </li>
+          <li className="list-group-item min-temp">
+            {Math.round(props.data.temp.min)}°
+          </li>
+        </ul>
+      </div>
+    );
+  } else {
+    return (
+      <div className="col">
+        <ul className="list-group daily">
+          <li className="list-group-item day">{day()}</li>
+          <li className="list-group-item icon">
+            <WeatherIcon code={props.data.weather[0].icon} />
+          </li>
+          <li className="list-group-item max-temp">
+            {Math.round((props.data.temp.max * 9) / 5 + 32)}°
+          </li>
+          <li className="list-group-item min-temp">
+            {Math.round((props.data.temp.min * 9) / 5 + 32)}°
+          </li>
+        </ul>
+      </div>
+    );
+  }
 }

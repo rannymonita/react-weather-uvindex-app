@@ -12,9 +12,7 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
-    console.log(forecast);
-
+  if (loaded && forecast.lat === props.lat && forecast.lon === props.lon) {
     return (
       <div className="row">
         <div className="col-md-12">
@@ -22,12 +20,12 @@ export default function WeatherForecast(props) {
           <hr />
         </div>
         <div className="forecast row">
-          <ForecastPreview data={forecast.daily[1]} />
-          <ForecastPreview data={forecast.daily[2]} />
-          <ForecastPreview data={forecast.daily[3]} />
-          <ForecastPreview data={forecast.daily[4]} />
-          <ForecastPreview data={forecast.daily[5]} />
-          <ForecastPreview data={forecast.daily[6]} />
+          <ForecastPreview data={forecast.daily[1]} unit={props.unit} />
+          <ForecastPreview data={forecast.daily[2]} unit={props.unit} />
+          <ForecastPreview data={forecast.daily[3]} unit={props.unit} />
+          <ForecastPreview data={forecast.daily[4]} unit={props.unit} />
+          <ForecastPreview data={forecast.daily[5]} unit={props.unit} />
+          <ForecastPreview data={forecast.daily[6]} unit={props.unit} />
         </div>
       </div>
     );
