@@ -2,7 +2,7 @@ import React from "react";
 
 export default function UvIndex() {
   return (
-    <div className="col-md-6">
+    <div className="col-md-12">
       <h4>UV Index</h4>
       <hr />
       <ul className="list-group">

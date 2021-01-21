@@ -19,8 +19,11 @@ export default function WeatherCurrent(props) {
             celsius={props.data.temperature}
             unit={props.unit}
             setUnit={props.setUnit}
+            realFeel={props.data.realFeel}
           />
 
+          <p>Humidity : {props.data.humid}%</p>
+          <p>Wind : {Math.round(props.data.wind)} Km/hr</p>
           <p>{props.data.description}</p>
         </div>
         <div className="col-md-6 icon-current">
@@ -28,25 +31,7 @@ export default function WeatherCurrent(props) {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-6">
-          <h4>Weather Details</h4>
-          <hr />
-          <ul className="list-group">
-            <li className="list-group-item">
-              Real feel :{" "}
-              <span id="real-feel-temp">{Math.round(props.data.realFeel)}</span>
-              &deg;
-            </li>
-            <li className="list-group-item">
-              Humidity : <span id="humidity">{props.data.humid}</span>%
-            </li>
-            <li className="list-group-item">
-              Wind : <span id="wind-speed">{Math.round(props.data.wind)}</span>{" "}
-              Km/hr
-            </li>
-          </ul>
-        </div>
-        <UvIndex />
+        <UvIndex data={props.data} />
       </div>
     </div>
   );

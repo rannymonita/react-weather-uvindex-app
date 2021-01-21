@@ -39,7 +39,15 @@ body {
   font-size: 11px;
   font-weight: 300;
   letter-spacing: 1px;
+  line-height: 24px;
   text-transform: capitalize;
+}
+
+.Weather .realFeel {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 24px;
 }
 
 .Weather .icon-current {

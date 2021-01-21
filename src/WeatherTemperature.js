@@ -17,33 +17,43 @@ export default function WeatherTemperature(props) {
 
   if (props.unit === "celsius") {
     return (
-      <div className="clearfix">
-        <div className="float-left">
-          <span className="temperature">{Math.round(props.celsius)}</span>
+      <div>
+        <div className="clearfix">
+          <div className="float-left">
+            <span className="temperature">{Math.round(props.celsius)}</span>
+          </div>
+          <div className="float-left">
+            <span className="unit">
+              <span className="active">°C</span> |{" "}
+              <a href="/" onClick={showFahrenheit}>
+                °F
+              </a>
+            </span>
+          </div>
         </div>
-        <div className="float-left">
-          <span className="unit">
-            <span className="active">°C</span> |{" "}
-            <a href="/" onClick={showFahrenheit}>
-              °F
-            </a>
-          </span>
+        <div className="realFeel">
+          <span>Real feel {Math.round(props.realFeel)}°</span>
         </div>
       </div>
     );
   } else {
     return (
-      <div className="clearfix">
-        <div className="float-left">
-          <span className="temperature">{Math.round(fahrenheit())}</span>
+      <div>
+        <div className="clearfix">
+          <div className="float-left">
+            <span className="temperature">{Math.round(fahrenheit())}</span>
+          </div>
+          <div className="float-left">
+            <span className="unit">
+              <a href="/" onClick={showCelsius}>
+                °C
+              </a>{" "}
+              | <span className="active">°F</span>
+            </span>
+          </div>
         </div>
-        <div className="float-left">
-          <span className="unit">
-            <a href="/" onClick={showCelsius}>
-              °C
-            </a>{" "}
-            | <span className="active">°F</span>
-          </span>
+        <div className="realFeel">
+          <span>Real feel {Math.round(((props.realFeel)* 9 / 5 )+ 32)}°</span>
         </div>
       </div>
     );
