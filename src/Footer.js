@@ -6,13 +6,13 @@ const Footer = () => {
     <footer>
       Design & coded by{" "}
       <a
-        href="https://github.com/rannymonita/react-weather-uvindex-app"
+        href="https://www.linkedin.com/in/rannymonita/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Ranny Monita
       </a>
-       <br />
+      <br />
       Open-sourced on{" "}
       <a
         href="https://github.com/rannymonita/react-weather-uvindex-app"
